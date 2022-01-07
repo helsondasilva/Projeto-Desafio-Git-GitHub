@@ -1,0 +1,17 @@
+## Configurando Banco de dados Mysql
+
+### mysql -u root
+
+mysql> CREATE USER'admin'@'localhost'IDENTIFIED BY'12345';
+
+mysql> GRAN ALL PRIVILLEGES ON*.*TO'admin'@'localhost';
+
+mysql> flush privileges;
+
+usuário:admin
+
+senha:12345
+
+### systemctl restart httpd
+
+###systemctl restart mysql
